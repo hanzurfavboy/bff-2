@@ -1,6 +1,5 @@
 ````
-Author : HANZ NIH BOS
-Recode : HANZ NIH BOS
+AUTHOR : 𝗛𝗔𝗡𝗭 𝗚𝗔𝗡𝗧𝗘𝗡𝗚
 ````
 ## PERINTAH
 ````bash
@@ -14,6 +13,5 @@ cd hanztzy
 ls 
 python2 hanztzy.py
 ````
-#
-### note:
-HANZ KEREN
+### NOTE:
+CRACK TEROS SAMPAI MAMPOSS !!
