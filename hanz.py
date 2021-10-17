@@ -701,7 +701,7 @@ def mobile(self, user, xxh):
 
         loop += 1
 
-    def sung(self):
+   def sung(self):
         ii = raw_input('\n%s#%s Pilih %s>%s '%(P,O,M,K))
         if ii == '':
             print '\n%s%s isi yang benar '%(M,til);self.sung()
